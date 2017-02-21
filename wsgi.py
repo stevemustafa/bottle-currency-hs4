@@ -15,7 +15,8 @@ from bottle import route
 
 STATIC_ROOT = os.path.join(os.path.dirname(__file__), 'static')
 
-SERVICE_URL = "http://www.sann-gmbh.com/currencyapi/"
+SERVICE_URL = "http://financy.dbeuchert.com/"
+ #http://www.sann-gmbh.com/currencyapi/"
 # Mirrors: # status as of Mar2013
 #   Working...
 #     http://www.sann-gmbh.com/currencyapi/
