@@ -1,5 +1,7 @@
 applications:
 - name: bottle-currency
+  host: bottle-currency
+  domain: hcf.hs4-demo.com
   memory: 128M
   buildpack: https://github.com/cloudfoundry/python-buildpack
   stack: cflinuxfs2
