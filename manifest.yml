@@ -1,13 +1,19 @@
 applications:
 - name: bottle-currency
-  host: bottle-currency
-  domain: hcf.hs4-demo.com
-  memory: 128M
-  buildpack: https://github.com/cloudfoundry/python-buildpack
-  stack: cflinuxfs2
+  routes:
+  - route: bottle-currency.hcf.hs4-demo.com
   services:
-    - bottle-redis
-    - bc-autoscaler
+  - hce-b29e7ae7-bf11-4ebf-87b4-3e24a751ab82
+  - bs-autoscaler
+  - bottle-currency-redis
+#  host: bottle-currency
+#  domain: hcf.hs4-demo.com
+#  memory: 128M
+#  buildpack: https://github.com/cloudfoundry/python-buildpack
+#  stack: cflinuxfs2
+#  services:
+#    - bottle-currency-redis
+#    - bs-autoscaler
 
 #  services:
 #    ${name}-db:
